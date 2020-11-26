@@ -1,15 +1,23 @@
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'media', // 'media' or 'class'
+  darkMode: 'class', // 'media' or 'class'
   theme: {
-    extend: {
-      colors: {
-        'accent-1': '#333',
-      },
-    },
+    darkSelector: '.dark',
+    extend: {},
+    fontFamily: {
+      'sans': ['Kumbh Sans', 'Work Sans', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+      'serif': ['Georgia', 'Cambria'],
+      'mono': ['Menlo','Monaco','Consolas','Liberation Mono','Courier New','monospace'],
+    }
   },
   variants: {
-    extend: {},
+    backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd'],
+    borderColor: ['dark', 'dark-disabled', 'dark-focus', 'dark-focus-within'],
+    textColor: ['dark', 'dark-hover', 'dark-active', 'dark-placeholder']
   },
-  plugins: [],
+  plugins: [require('tailwindcss-dark-mode')()],
 }

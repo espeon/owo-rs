@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ThemeSwitcher from './themeSwitcher'
 
 const links = [
   { href: 'https://github.com/vercel/next.js', label: 'GitHub' },
@@ -19,11 +20,12 @@ export default function Nav() {
         <ul className="flex items-center justify-between space-x-4">
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
-              <a href={href} className="no-underline btn-blue">
+              <a href={href} className="no-underline bg-gray-700 dark:bg-gray-400 pt-3 px-3 pb-2 rounded-md">
                 {label}
               </a>
             </li>
           ))}
+          <ThemeSwitcher />
         </ul>
       </ul>
     </nav>
