@@ -8,7 +8,7 @@ export default function IndexPage() {
       <Head>
         <title>owo.rs community</title>
         <link rel="icon" href="icon.png"></link>
-        <meta name="twitter:card" content="the owo.rs internet website for developers and everyone else" key="twcard" />
+        <meta name="twitter:card" content="photo" key="twcard" />
         <meta name="twitter:creator" content="@emmaischic" key="twhandle" />
 
         <meta property="og:url" content="https://owo.rs" key="ogurl" />
