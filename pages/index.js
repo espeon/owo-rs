@@ -16,6 +16,7 @@ export default function IndexPage() {
         <meta property="og:site_name" content="owo.rs" key="ogsitename" />
         <meta property="og:title" content="owo.rs community" key="ogtitle" />
         <meta property="og:description" content="the owo.rs internet website for developers and everyone else" key="ogdesc" />
+        <script async defer data-website-id="55dde592-d0bd-43be-a4ff-e5cf3636dbf2" src="https://umami.izu.moe/umami.js"></script>
       </Head>
       <section>
         <div className="bg-white dark:bg-black flex flex-col h-screen m-auto  transition duration-300 ease-in-out dark:transition dark:duration-300 dark:ease-in-out">
